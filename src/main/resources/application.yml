@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: web-service
+  thymeleaf:
+    suffix: .html
+server:
+  port: 8081
