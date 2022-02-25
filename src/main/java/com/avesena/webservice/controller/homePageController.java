@@ -19,4 +19,8 @@ public class homePageController {
         return "index";
     }
 
+    @GetMapping("/logon")
+    public String logonPage(Model model) {
+        return "logon";
+    }
 }
