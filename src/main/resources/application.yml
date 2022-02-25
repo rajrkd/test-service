@@ -1,7 +1,10 @@
 spring:
   application:
-    name: web-service
+    name: Avesena Home Services
   thymeleaf:
     suffix: .html
+    cache: false
+    enabled: true
+    prefix: classpath:/templates/
 server:
   port: 8081

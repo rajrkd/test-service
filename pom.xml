@@ -33,14 +33,6 @@
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
-	<!--	<dependency>
-			<groupId>com.avesena.dataservice</groupId>
-			<artifactId>data-service</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<scope>provided</scope>
-&lt;!&ndash;			<type>pom</type>&ndash;&gt;
-		</dependency>-->
-
 	</dependencies>
 
 	<build>
