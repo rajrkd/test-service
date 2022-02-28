@@ -1,7 +1,29 @@
-<html>
-<head><title>Avesena Login Page</title></head>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login - Avesena Services</title>
+</head>
 <body>
-<h1>Hello !</h1>
-<p>Welcome to <span th:text="${appName}">Our App</span></p>
+<div class="container-fluid text-center">
+
+    <form action="/logon" method="post" style="max-width: 350px; margin: 0 auto;">
+
+        <div class="border border-secondary p-3 rounded">
+            <p>Access to Avesena Home Services</p>
+            <p>
+                <input type="email" name="email" class="form-control" placeholder="E-mail" required autofocus/>
+            </p>
+            <p>
+                <input type="password" name="password" class="form-control" placeholder="Password" required />
+            </p>
+            <p>
+                <input type="checkbox" name="remember-me" />&nbsp;Remember Me
+            </p>
+            <p>
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </p>
+        </div>
+    </form>
+</div>
 </body>
 </html>
