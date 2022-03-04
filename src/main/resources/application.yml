@@ -10,7 +10,22 @@ spring:
     user:
       name: sudeen
       password: 12345
+  datasource:
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://test1.cdydzdklibta.us-east-2.rds.amazonaws.com:5432/test
+#    username: postgres
+#    password: RSBsoftware
+    url: jdbc:postgresql://localhost:5432/generalDatabase
+    username: uadmin
+    password: upassword
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
 server:
-  port: 8081
+  port: 8080
   servlet:
     context-path: /auth
